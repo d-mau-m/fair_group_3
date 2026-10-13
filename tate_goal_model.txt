@@ -1,0 +1,287 @@
+{
+ "actors": [
+  {
+   "id": "874c3738-6300-4cf0-8e21-19528d7037ec",
+   "text": "Reuse stakeholders",
+   "type": "istar.Role",
+   "x": 40,
+   "y": 60,
+   "customProperties": {
+    "Description": ""
+   },
+   "nodes": [
+    {
+     "id": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+     "text": "Tate artist data reused across collections",
+     "type": "istar.Quality",
+     "x": 520,
+     "y": 120,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "721b321c-48aa-4848-9e6d-4fba78ce51fa",
+     "text": "Every artist identifiable (F1, A1)",
+     "type": "istar.Goal",
+     "x": 120,
+     "y": 260,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "c5f7ac56-e23e-48e8-b26f-9bd44db9b905",
+     "text": "Mint IRIs and w3id redirect",
+     "type": "istar.Task",
+     "x": 120,
+     "y": 400,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "116b7b3f-07fe-4472-b142-66469b7a0c64",
+     "text": "Data: Tate id, artist page url",
+     "type": "istar.Resource",
+     "x": 120,
+     "y": 540,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "9909707c-2dc1-4ffc-bf2a-b40cb0398b28",
+     "text": "Linked to Wikidata (I3, R1.3)",
+     "type": "istar.Goal",
+     "x": 320,
+     "y": 260,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "0ae0f978-dd51-4250-a374-15d16c2829ff",
+     "text": "Reconcile artists and places",
+     "type": "istar.Task",
+     "x": 320,
+     "y": 400,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "1f25ca72-76f4-41c5-b9ca-b724915a5327",
+     "text": "Data: name, birth year, places",
+     "type": "istar.Resource",
+     "x": 320,
+     "y": 540,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "6acc41d0-7b64-4568-9b78-4eb491d7580c",
+     "text": "Machine-interpretable (I1, I2, R1)",
+     "type": "istar.Goal",
+     "x": 520,
+     "y": 260,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "a021cae5-0d2e-4f0e-83d5-9583393392a9",
+     "text": "Model as RDF, validate with SHACL",
+     "type": "istar.Task",
+     "x": 520,
+     "y": 400,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "8e01fb7c-f203-4371-93d8-a30f358bdddc",
+     "text": "Data: 9 columns plus derived ones",
+     "type": "istar.Resource",
+     "x": 520,
+     "y": 540,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "fd9ce536-7299-446d-9d64-4d03e13a06b6",
+     "text": "Licence and provenance clear (R1.1, R1.2)",
+     "type": "istar.Goal",
+     "x": 720,
+     "y": 260,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "78238c35-52e0-4943-8dad-7f213428fcad",
+     "text": "Add CC0 licence and PROV-O",
+     "type": "istar.Task",
+     "x": 720,
+     "y": 400,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "516e3d38-86b4-406c-a051-1f375b73d154",
+     "text": "Metadata: licence, source commit",
+     "type": "istar.Resource",
+     "x": 720,
+     "y": 540,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "5efdadf2-c5fb-4273-81db-8515d93a4a2f",
+     "text": "Dataset findable and persistent (F2-F4, A2)",
+     "type": "istar.Goal",
+     "x": 920,
+     "y": 260,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "eed7f9b2-479a-425c-86c2-47e6537cb559",
+     "text": "Publish DCAT record in FDP",
+     "type": "istar.Task",
+     "x": 920,
+     "y": 400,
+     "customProperties": {
+      "Description": ""
+     }
+    },
+    {
+     "id": "339eec2f-ff26-461e-8f0c-bc7be5770ef5",
+     "text": "Metadata: title, distributions",
+     "type": "istar.Resource",
+     "x": 920,
+     "y": 540,
+     "customProperties": {
+      "Description": ""
+     }
+    }
+   ]
+  }
+ ],
+ "orphans": [],
+ "dependencies": [],
+ "links": [
+  {
+   "id": "571d78ef-e0d4-47df-bc4d-59311b6cf07f",
+   "type": "istar.ContributionLink",
+   "source": "721b321c-48aa-4848-9e6d-4fba78ce51fa",
+   "target": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+   "label": "help"
+  },
+  {
+   "id": "df1203c1-83bc-4bc2-8b53-96a6ab3db606",
+   "type": "istar.AndRefinementLink",
+   "source": "c5f7ac56-e23e-48e8-b26f-9bd44db9b905",
+   "target": "721b321c-48aa-4848-9e6d-4fba78ce51fa"
+  },
+  {
+   "id": "30f93b6d-579b-441e-bb14-fa5e13b7839a",
+   "type": "istar.NeededByLink",
+   "source": "116b7b3f-07fe-4472-b142-66469b7a0c64",
+   "target": "c5f7ac56-e23e-48e8-b26f-9bd44db9b905"
+  },
+  {
+   "id": "009a4419-f1c8-420e-a9cf-ee1574c961e4",
+   "type": "istar.ContributionLink",
+   "source": "9909707c-2dc1-4ffc-bf2a-b40cb0398b28",
+   "target": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+   "label": "help"
+  },
+  {
+   "id": "bf4ee7fb-f545-4e73-8f65-393ab9cbc528",
+   "type": "istar.AndRefinementLink",
+   "source": "0ae0f978-dd51-4250-a374-15d16c2829ff",
+   "target": "9909707c-2dc1-4ffc-bf2a-b40cb0398b28"
+  },
+  {
+   "id": "7b0290ca-6db4-4fb1-86e0-6ee74662ab09",
+   "type": "istar.NeededByLink",
+   "source": "1f25ca72-76f4-41c5-b9ca-b724915a5327",
+   "target": "0ae0f978-dd51-4250-a374-15d16c2829ff"
+  },
+  {
+   "id": "da1d5a51-52aa-41bd-b4e3-4170786e2e61",
+   "type": "istar.ContributionLink",
+   "source": "6acc41d0-7b64-4568-9b78-4eb491d7580c",
+   "target": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+   "label": "help"
+  },
+  {
+   "id": "59d84777-11d6-490f-8b13-3333a0c47c8b",
+   "type": "istar.AndRefinementLink",
+   "source": "a021cae5-0d2e-4f0e-83d5-9583393392a9",
+   "target": "6acc41d0-7b64-4568-9b78-4eb491d7580c"
+  },
+  {
+   "id": "45b177ce-8bc9-49c8-888e-18eda5b9fc0b",
+   "type": "istar.NeededByLink",
+   "source": "8e01fb7c-f203-4371-93d8-a30f358bdddc",
+   "target": "a021cae5-0d2e-4f0e-83d5-9583393392a9"
+  },
+  {
+   "id": "0eccecd3-5a4d-4edb-80fa-0916eb771f1a",
+   "type": "istar.ContributionLink",
+   "source": "fd9ce536-7299-446d-9d64-4d03e13a06b6",
+   "target": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+   "label": "help"
+  },
+  {
+   "id": "9af6f856-d0c4-4f68-b418-1cef0a4fe936",
+   "type": "istar.AndRefinementLink",
+   "source": "78238c35-52e0-4943-8dad-7f213428fcad",
+   "target": "fd9ce536-7299-446d-9d64-4d03e13a06b6"
+  },
+  {
+   "id": "d70e9169-6e18-446d-a6ec-8c5070c56f0f",
+   "type": "istar.NeededByLink",
+   "source": "516e3d38-86b4-406c-a051-1f375b73d154",
+   "target": "78238c35-52e0-4943-8dad-7f213428fcad"
+  },
+  {
+   "id": "ef8833f7-a0b0-4ccd-afb6-8fdd78af9361",
+   "type": "istar.ContributionLink",
+   "source": "5efdadf2-c5fb-4273-81db-8515d93a4a2f",
+   "target": "f0d82ed7-18e6-4a1d-946d-62255a2b96fb",
+   "label": "help"
+  },
+  {
+   "id": "ed46487d-ced7-4417-8023-f4963454b093",
+   "type": "istar.AndRefinementLink",
+   "source": "eed7f9b2-479a-425c-86c2-47e6537cb559",
+   "target": "5efdadf2-c5fb-4273-81db-8515d93a4a2f"
+  },
+  {
+   "id": "e011cfd4-ace4-45a2-a7d4-6880b057f8f2",
+   "type": "istar.NeededByLink",
+   "source": "339eec2f-ff26-461e-8f0c-bc7be5770ef5",
+   "target": "eed7f9b2-479a-425c-86c2-47e6537cb559"
+  }
+ ],
+ "display": {},
+ "tool": "pistar.2.1.0",
+ "istar": "2.0",
+ "saveDate": "Tue, 13 Oct 2026 11:00:00 GMT",
+ "diagram": {
+  "width": 1400,
+  "height": 800,
+  "name": "Tate artist data goal model",
+  "customProperties": {
+   "Description": ""
+  }
+ }
+}
