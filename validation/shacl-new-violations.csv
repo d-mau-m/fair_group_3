@@ -1,0 +1,14 @@
+focus node,path,message
+http://www.wikidata.org/entity/Q239,http://schema.org/containedInPlace,More than 1 values on wd:Q239->schema1:containedInPlace
+http://www.wikidata.org/entity/Q49218,http://schema.org/containedInPlace,More than 1 values on wd:Q49218->schema1:containedInPlace
+http://www.wikidata.org/entity/Q49186,http://schema.org/containedInPlace,More than 1 values on wd:Q49186->schema1:containedInPlace
+http://www.wikidata.org/entity/Q65,http://schema.org/containedInPlace,More than 1 values on wd:Q65->schema1:containedInPlace
+http://www.wikidata.org/entity/Q1009324,http://schema.org/containedInPlace,More than 1 values on wd:Q1009324->schema1:containedInPlace
+http://www.wikidata.org/entity/Q70,http://schema.org/containedInPlace,More than 1 values on wd:Q70->schema1:containedInPlace
+http://www.wikidata.org/entity/Q79848,http://schema.org/containedInPlace,More than 1 values on wd:Q79848->schema1:containedInPlace
+http://www.wikidata.org/entity/Q205905,http://schema.org/containedInPlace,More than 1 values on wd:Q205905->schema1:containedInPlace
+http://www.wikidata.org/entity/Q2132,http://schema.org/containedInPlace,More than 1 values on wd:Q2132->schema1:containedInPlace
+http://www.wikidata.org/entity/Q6084155,http://schema.org/containedInPlace,More than 1 values on wd:Q6084155->schema1:containedInPlace
+http://www.wikidata.org/entity/Q79657,http://schema.org/containedInPlace,More than 1 values on wd:Q79657->schema1:containedInPlace
+http://www.wikidata.org/entity/Q6106,http://schema.org/containedInPlace,More than 1 values on wd:Q6106->schema1:containedInPlace
+http://www.wikidata.org/entity/Q1044808,http://schema.org/containedInPlace,More than 1 values on wd:Q1044808->schema1:containedInPlace

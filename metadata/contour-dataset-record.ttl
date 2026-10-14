@@ -1,0 +1,22 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dataset> a dcat:Dataset ;
+    dct:title "Tate collection artists, FAIRified"@en ;
+    dct:description "The 3,532 artists of the Tate collection (October 2014 snapshot) in RDF with schema.org; artists, birth and death places and countries linked to Wikidata; groups typed separately. Derived from Tate's CC0 artist_data.csv and modified by group 3, FAIR Data Engineering, University of Twente."@en ;
+    dct:identifier "https://w3id.org/FAIR-course-UT/2025-2026/group3/data" ;
+    dct:creator <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#sepehr>, <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#mauricio> ;
+    dct:publisher <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#utwente> ;
+    dct:issued "2026-10-14"^^xsd:date ;
+    dcat:version "1.0" ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dct:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:keyword "art"@en, "artists"@en, "Tate"@en, "museum collection"@en, "linked data"@en ;
+    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/EDUC> ;
+    dct:temporal "1497/2014" ;
+    prov:wasDerivedFrom <https://github.com/tategallery/collection> ;
+    prov:wasGeneratedBy <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#fairification> ;
+    dct:conformsTo <https://w3id.org/FAIR-course-UT/2025-2026/group3/ont>, <https://w3id.org/FAIR-course-UT/2025-2026/group3/shapes> ;
+    dcat:distribution <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-rdf>, <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-csv-prepared>, <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-csv-original> .

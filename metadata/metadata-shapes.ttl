@@ -1,0 +1,52 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix prov:   <http://www.w3.org/ns/prov#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix :       <https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata-shapes#> .
+
+# Metadata schema for the FAIRified Tate artist data (group 3).
+# Each property notes the FAIR principle it supports.
+
+:DatasetShape a sh:NodeShape ;
+    sh:targetClass dcat:Dataset ;
+    sh:property [ sh:path dct:title ;        sh:minCount 1 ; sh:maxCount 1 ; sh:datatype rdf:langString ; sh:maxLength 120 ] ;   # F2
+    sh:property [ sh:path dct:description ;  sh:minCount 1 ; sh:maxCount 1 ; sh:datatype rdf:langString ] ;                       # F2, R1
+    sh:property [ sh:path dct:identifier ;   sh:minCount 1 ; sh:maxCount 1 ] ;                                                    # F1
+    sh:property [ sh:path dct:creator ;      sh:minCount 1 ; sh:node :AgentShape ] ;                                              # R1.2
+    sh:property [ sh:path dct:publisher ;    sh:minCount 1 ; sh:maxCount 1 ; sh:node :AgentShape ] ;                              # R1.2
+    sh:property [ sh:path dct:issued ;       sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:date ] ;                             # R1
+    sh:property [ sh:path dct:modified ;     sh:maxCount 1 ; sh:datatype xsd:date ] ;
+    sh:property [ sh:path dcat:version ;     sh:minCount 1 ; sh:maxCount 1 ; sh:maxLength 10 ] ;                                  # R1
+    sh:property [ sh:path dct:license ;      sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;                               # R1.1
+    sh:property [ sh:path dct:language ;     sh:minCount 1 ; sh:nodeKind sh:IRI ] ;                                               # R1
+    sh:property [ sh:path dcat:keyword ;     sh:minCount 1 ; sh:datatype rdf:langString ] ;                                       # F2
+    sh:property [ sh:path dcat:theme ;       sh:minCount 1 ; sh:nodeKind sh:IRI ] ;                                               # F2, I2
+    sh:property [ sh:path dct:temporal ;     sh:maxCount 1 ] ;
+    sh:property [ sh:path prov:wasDerivedFrom ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;                                            # R1.2
+    sh:property [ sh:path prov:wasGeneratedBy ; sh:maxCount 1 ; sh:node :ActivityShape ] ;                                        # R1.2
+    sh:property [ sh:path dct:conformsTo ;   sh:nodeKind sh:IRI ] ;                                                               # R1.3
+    sh:property [ sh:path dcat:distribution ; sh:minCount 1 ; sh:node :DistributionShape ] .                                      # F3, A1
+
+:DistributionShape a sh:NodeShape ;
+    sh:targetClass dcat:Distribution ;
+    sh:property [ sh:path dct:title ;        sh:minCount 1 ; sh:maxCount 1 ; sh:datatype rdf:langString ] ;
+    sh:property [ sh:path dcat:downloadURL ; sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;                               # A1
+    sh:property [ sh:path dcat:accessURL ;   sh:minCount 1 ; sh:nodeKind sh:IRI ] ;                                               # A1
+    sh:property [ sh:path dcat:mediaType ;   sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:pattern "^http://www\\.iana\\.org/assignments/media-types/" ] ;                                               # I1
+    sh:property [ sh:path dct:license ;      sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ] ;                               # R1.1
+    sh:property [ sh:path dcat:byteSize ;    sh:maxCount 1 ; sh:datatype xsd:nonNegativeInteger ] ;
+    sh:property [ sh:path dct:conformsTo ;   sh:nodeKind sh:IRI ] .                                                               # R1.3
+
+:AgentShape a sh:NodeShape ;
+    sh:property [ sh:path rdf:type ; sh:minCount 1 ; sh:in ( foaf:Person foaf:Organization ) ] ;
+    sh:property [ sh:path foaf:name ; sh:minCount 1 ; sh:maxCount 1 ] .
+
+:ActivityShape a sh:NodeShape ;
+    sh:property [ sh:path rdf:type ;  sh:hasValue prov:Activity ] ;
+    sh:property [ sh:path prov:used ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path prov:wasAssociatedWith ; sh:minCount 1 ; sh:node :AgentShape ] ;
+    sh:property [ sh:path prov:endedAtTime ; sh:maxCount 1 ; sh:datatype xsd:dateTime ] .

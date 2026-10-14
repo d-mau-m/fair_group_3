@@ -1,0 +1,26 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-csv-prepared> a dcat:Distribution ;
+    dct:title "Prepared and reconciled table (CSV)"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/d-mau-m/fair_group_3/refs/heads/main/data/prepared/artist-data-csv.csv> ;
+    dcat:accessURL <https://github.com/d-mau-m/fair_group_3> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> .
+
+<https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-rdf> a dcat:Distribution ;
+    dct:title "Artists as RDF (Turtle)"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/d-mau-m/fair_group_3/refs/heads/main/data/rdf/artists.ttl> ;
+    dcat:accessURL <https://w3id.org/FAIR-course-UT/2025-2026/group3/data> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/turtle> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcat:byteSize "1790934"^^xsd:nonNegativeInteger ;
+    dct:conformsTo <https://w3id.org/FAIR-course-UT/2025-2026/group3/shapes> .
+
+<https://w3id.org/FAIR-course-UT/2025-2026/group3/metadata#dist-csv-original> a dcat:Distribution ;
+    dct:title "Original Tate artist table (CSV, unchanged)"@en ;
+    dcat:downloadURL <https://raw.githubusercontent.com/d-mau-m/fair_group_3/refs/heads/main/data/original/artist_data.csv> ;
+    dcat:accessURL <https://github.com/tategallery/collection> ;
+    dcat:mediaType <http://www.iana.org/assignments/media-types/text/csv> ;
+    dct:license <http://creativecommons.org/publicdomain/zero/1.0/> .
