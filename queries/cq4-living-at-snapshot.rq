@@ -1,0 +1,9 @@
+# CQ4 – Which artists were still living when Tate published the data (October 2014)?
+PREFIX schema: <http://schema.org/>
+PREFIX ont:    <https://w3id.org/FAIR-course-UT/2025-2026/group3/ont#>
+SELECT ?artist ?name ?birth WHERE {
+  ?artist ont:livingAtSnapshot true ;
+          schema:name ?name .
+  OPTIONAL { ?artist schema:birthDate ?birth }
+}
+ORDER BY ?name

@@ -1,0 +1,14 @@
+# CQ3 – Which artists were born in one country and died in another?
+PREFIX schema: <http://schema.org/>
+SELECT ?artist ?name ?birthCountry ?deathCountry WHERE {
+  ?artist schema:name ?name ;
+          schema:birthPlace ?bp ;
+          schema:deathPlace ?dp .
+  # country = the place itself if it has no container, otherwise its container
+  OPTIONAL { ?bp schema:containedInPlace ?bpc }
+  OPTIONAL { ?dp schema:containedInPlace ?dpc }
+  BIND (COALESCE(?bpc, ?bp) AS ?birthCountry)
+  BIND (COALESCE(?dpc, ?dp) AS ?deathCountry)
+  FILTER (?birthCountry != ?deathCountry)
+}
+ORDER BY ?name

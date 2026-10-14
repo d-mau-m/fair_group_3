@@ -1,0 +1,9 @@
+# CQ1 – Which artists in the Tate collection were born in the Netherlands?
+PREFIX schema: <http://schema.org/>
+PREFIX wd:     <http://www.wikidata.org/entity/>
+SELECT ?artist ?name ?birthPlace WHERE {
+  ?artist schema:name ?name ;
+          schema:birthPlace ?birthPlace .
+  ?birthPlace schema:containedInPlace* wd:Q55 .    # Q55 = Netherlands; * also matches the country itself
+}
+ORDER BY ?name

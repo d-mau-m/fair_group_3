@@ -1,0 +1,12 @@
+# CQ6 – Under which licence, and from which source, was this data published?
+# Runs against the dataset METADATA (Task 4), not against artists.ttl.
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct:  <http://purl.org/dc/terms/>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+SELECT ?dataset ?title ?licence ?source ?issued WHERE {
+  ?dataset a dcat:Dataset ;
+           dct:title ?title ;
+           dct:license ?licence .
+  OPTIONAL { ?dataset prov:wasDerivedFrom ?source }
+  OPTIONAL { ?dataset dct:issued ?issued }
+}

@@ -1,0 +1,64 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix schema: <http://schema.org/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix ont:    <https://w3id.org/FAIR-course-UT/2025-2026/group3/ont#> .
+@prefix :       <https://w3id.org/FAIR-course-UT/2025-2026/group3/shapes#> .
+
+# ---- Persons -------------------------------------------------------------
+:PersonShape a sh:NodeShape ;
+    sh:targetClass schema:Person ;
+    sh:property [ sh:path schema:name ;       sh:minCount 1 ; sh:maxCount 1 ; sh:datatype xsd:string ] ;
+    sh:property [ sh:path schema:identifier ; sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path schema:url ;        sh:minCount 1 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ;
+                  sh:pattern "^http://www\\.tate\\.org\\.uk/art/artists/" ] ;
+    sh:property [ sh:path schema:gender ;     sh:maxCount 1 ; sh:in ( schema:Male schema:Female ) ] ;
+    sh:property [ sh:path schema:birthDate ;  sh:maxCount 1 ; sh:datatype xsd:gYear ] ;
+    sh:property [ sh:path schema:deathDate ;  sh:maxCount 1 ; sh:datatype xsd:gYear ] ;
+    sh:property [ sh:path ont:livingAtSnapshot ; sh:maxCount 1 ; sh:datatype xsd:boolean ] ;
+    sh:property [ sh:path schema:birthPlace ; sh:maxCount 1 ; sh:node :WikidataEntity ] ;
+    sh:property [ sh:path schema:deathPlace ; sh:maxCount 1 ; sh:node :WikidataEntity ] ;
+    sh:property [ sh:path owl:sameAs ;        sh:maxCount 1 ; sh:node :WikidataEntity ] ;
+    # a person cannot die before being born
+    sh:sparql [
+        sh:message "Death year is before birth year" ;
+        sh:select """
+            PREFIX schema: <http://schema.org/>
+            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+            SELECT $this WHERE {
+                $this schema:birthDate ?b ; schema:deathDate ?d .
+                FILTER (xsd:integer(STR(?d)) < xsd:integer(STR(?b)))
+            }""" ] ;
+    # someone flagged as living must not have a death year
+    sh:sparql [
+        sh:message "Artist flagged as living at snapshot but has a death year" ;
+        sh:select """
+            PREFIX schema: <http://schema.org/>
+            PREFIX ont: <https://w3id.org/FAIR-course-UT/2025-2026/group3/ont#>
+            SELECT $this WHERE { $this ont:livingAtSnapshot true ; schema:deathDate ?d . }""" ] .
+
+# ---- Groups (schools, collectives): no person-only properties --------------
+:GroupShape a sh:NodeShape ;
+    sh:targetClass foaf:Group ;
+    sh:property [ sh:path schema:name ;       sh:minCount 1 ; sh:maxCount 1 ] ;
+    sh:property [ sh:path schema:url ;        sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+    sh:property [ sh:path schema:gender ;     sh:maxCount 0 ] ;
+    sh:property [ sh:path schema:birthDate ;  sh:maxCount 0 ] ;
+    sh:property [ sh:path schema:deathDate ;  sh:maxCount 0 ] ;
+    sh:property [ sh:path ont:livingAtSnapshot ; sh:maxCount 0 ] .
+
+# ---- Places: a city lies in exactly one country, never in itself ----------
+:PlaceShape a sh:NodeShape ;
+    sh:targetSubjectsOf schema:containedInPlace ;
+    sh:property [ sh:path schema:containedInPlace ; sh:maxCount 1 ; sh:node :WikidataEntity ] ;
+    sh:sparql [
+        sh:message "Place is contained in itself" ;
+        sh:select """
+            PREFIX schema: <http://schema.org/>
+            SELECT $this WHERE { $this schema:containedInPlace $this . }""" ] .
+
+# ---- Every link target must be a Wikidata entity IRI ----------------------
+:WikidataEntity a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:pattern "^http://www\\.wikidata\\.org/entity/Q[0-9]+$" .

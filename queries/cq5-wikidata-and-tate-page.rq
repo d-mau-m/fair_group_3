@@ -1,0 +1,8 @@
+# CQ5 – What is the Wikidata identifier and Tate web page of a given artist?
+PREFIX schema: <http://schema.org/>
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+SELECT ?artist ?wikidata ?tatePage WHERE {
+  ?artist schema:name "Abbey, Edwin Austin" ;     # change the name to look up another artist
+          schema:url ?tatePage .
+  OPTIONAL { ?artist owl:sameAs ?wikidata }
+}

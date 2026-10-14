@@ -1,0 +1,11 @@
+# CQ2 – What is the gender distribution of artists per birth century?
+PREFIX schema: <http://schema.org/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+SELECT ?century ?gender (COUNT(?artist) AS ?artists) WHERE {
+  ?artist a schema:Person ;
+          schema:gender ?gender ;
+          schema:birthDate ?birth .
+  BIND (FLOOR(xsd:integer(STR(?birth)) / 100) + 1 AS ?century)
+}
+GROUP BY ?century ?gender
+ORDER BY ?century ?gender

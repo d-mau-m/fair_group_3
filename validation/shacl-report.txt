@@ -1,0 +1,81 @@
+Validation Report
+Conforms: False
+Results (13):
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q1009324
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q1009324->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q1044808
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q1044808->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q205905
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q205905->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q2132
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q2132->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q239
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q239->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q49186
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q49186->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q49218
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q49218->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q6084155
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q6084155->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q6106
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q6106->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q65
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q65->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q70
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q70->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q79657
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q79657->schema1:containedInPlace
+Constraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:maxCount Literal("1", datatype=xsd:integer) ; sh:node :WikidataEntity ; sh:path schema1:containedInPlace ]
+	Focus Node: wd:Q79848
+	Result Path: schema1:containedInPlace
+	Message: More than 1 values on wd:Q79848->schema1:containedInPlace
