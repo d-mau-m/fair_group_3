@@ -1,0 +1,55 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba> a dcat:Resource,
+    dcat:Catalog;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Tate collection data â€“ FAIR Data Engineering group 3";
+  dcterms:title "Tate collection data â€“ FAIR Data Engineering group 3";
+  dcat:version "1.0";
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2026-10-23T16:00:15.051366867Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2026-10-23T16:11:11.79086891Z"^^xsd:dateTime;
+  dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/>;
+  dcterms:description "FAIRified open data from the Tate collection, produced for the FAIR Data Engineering course at the University of Twente.";
+  dcterms:language <http://publications.europa.eu/resource/authority/language/ENG>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba#identifier>;
+  dcterms:accessRights <http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "University of Twente"
+    ];
+  <http://semanticscience.org/resource/SIO_000628> <http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <http://localhost:8085>;
+  foaf:homePage <https://github.com/d-mau-m/fair_group_3>;
+  dcterms:issued "2026-10-23T16:00:15.051366867Z"^^xsd:dateTime;
+  dcterms:modified "2026-10-23T16:00:15.051366867Z"^^xsd:dateTime;
+  dcat:dataset <http://localhost:8085/dataset/12126fe2-e550-430d-9db5-028e7bc9b22a>;
+  dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme/EDUC>;
+  dcterms:conformsTo <http://localhost:8085/profile/a0949e72-4466-4d53-8900-9436d1049a4b> .
+
+<http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba#identifier> a
+    <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba" .
+
+<http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has no access restriction" .
+
+<http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba/metrics/445c0a70d1e214e545b261559e2842f4>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.ietf.org/rfc/rfc3986.txt>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.ietf.org/rfc/rfc3986.txt> .
+
+<http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba/metrics/5d27e854a9e78eb3f663331cd47cdc13>
+  <http://semanticscience.org/resource/SIO_000628> <https://www.wikidata.org/wiki/Q8777>;
+  <http://semanticscience.org/resource/SIO_000332> <https://www.wikidata.org/wiki/Q8777> .
+
+<http://localhost:8085/dataset/> a ldp:DirectContainer;
+  dcterms:title "Datasets";
+  ldp:membershipResource <http://localhost:8085/catalog/5117aa36-2aaf-47eb-aad3-2c462581f0ba>;
+  ldp:hasMemberRelation dcat:dataset;
+  ldp:contains <http://localhost:8085/dataset/12126fe2-e550-430d-9db5-028e7bc9b22a> .
+
+<http://localhost:8085/profile/a0949e72-4466-4d53-8900-9436d1049a4b> <http://www.w3.org/2000/01/rdf-schema#label>
+    "Catalog Profile" .

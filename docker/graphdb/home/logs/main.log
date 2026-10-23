@@ -1,0 +1,376 @@
+[INFO ] 2026-10-23 15:45:50,408 [main | c.o.g.Config] Using 'jar:file:/opt/graphdb/dist/lib/graphdb-application-common-10.7.4.jar!/com/ontotext/graphdb/logback.xml' as logback's configuration file
+[INFO ] 2026-10-23 15:45:51,381 [main | c.o.g.s.GraphDB] Starting GraphDB in workbench mode.
+[INFO ] 2026-10-23 15:46:14,815 [main | c.o.g.Config] GraphDB Home directory: /opt/graphdb/home
+[INFO ] 2026-10-23 15:46:14,819 [main | c.o.g.Config] GraphDB Config directory: /opt/graphdb/home/conf
+[INFO ] 2026-10-23 15:46:14,823 [main | c.o.g.Config] GraphDB Data directory: /opt/graphdb/home/data
+[INFO ] 2026-10-23 15:46:14,826 [main | c.o.g.Config] GraphDB Work directory: /opt/graphdb/home/work
+[INFO ] 2026-10-23 15:46:14,840 [main | c.o.g.Config] GraphDB Logs directory: /opt/graphdb/home/logs
+[INFO ] 2026-10-23 15:46:16,212 [main | c.o.f.c.s.r.GraphDBRpcServer] Started gRPC server on port 7300 successfully
+[INFO ] 2026-10-23 15:46:20,528 [main | c.o.g.s.GraphDB] Started GraphDB in workbench mode at port 7200.
+[INFO ] 2026-10-23 15:46:25,345 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:46:39,818 [http-nio-7200-exec-6 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:46:54,291 [http-nio-7200-exec-7 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:07,907 [http-nio-7200-exec-7 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:19,594 [http-nio-7200-exec-8 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:29,667 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:40,089 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:51,945 [http-nio-7200-exec-2 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:47:54,613 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Version: 10.7, revision: -1192129656
+[INFO ] 2026-10-23 15:47:54,614 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Build date: Thu Sep 19 12:04:33 GMT 2024
+[INFO ] 2026-10-23 15:47:54,625 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Started repository fdp in READ/WRITE mode.
+[INFO ] 2026-10-23 15:47:54,628 [repository-manager-0 | c.o.GraphDBConfigParameters] Cache pages for tuples: 7829
+[INFO ] 2026-10-23 15:47:54,629 [repository-manager-0 | c.o.GraphDBConfigParameters] Cache pages for predicates: 1118
+[INFO ] 2026-10-23 15:47:54,631 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Configured parameter graphdb.engine.onheap.allocation to true
+[INFO ] 2026-10-23 15:47:54,642 [repository-manager-0 | c.o.t.i.FileSystemHealth] Active locations health:
+[INFO ] 2026-10-23 15:47:54,651 [repository-manager-0 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/data/repositories/fdp: 33.0% (OK)
+[INFO ] 2026-10-23 15:47:54,654 [repository-manager-0 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/logs: 33.0% (OK)
+[INFO ] 2026-10-23 15:47:54,660 [repository-manager-0 | c.o.t.i.FileSystemHealth] /opt/graphdb/home/work: 33.0% (OK)
+[INFO ] 2026-10-23 15:47:54,673 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Storage folder does not exist and is created: /opt/graphdb/home/data/repositories/fdp/storage
+[INFO ] 2026-10-23 15:47:54,704 [repository-manager-0 | c.o.t.e.EntityPoolFactory] Using entity pool implementation: transactional-disk
+[INFO ] 2026-10-23 15:47:55,371 [repository-manager-0 | c.o.t.u.l.LimitedObjectCacheFactory] Using LRU cache type: synch
+[WARN ] 2026-10-23 15:47:55,671 [repository-manager-0 | c.o.t.b.AVLRepository] Clear triple statisctics collection
+[WARN ] 2026-10-23 15:47:55,694 [repository-manager-0 | c.o.t.b.AVLRepository] Clear PSOT collection
+[WARN ] 2026-10-23 15:47:55,708 [repository-manager-0 | c.o.t.b.AVLRepository] Clear POST collection
+[WARN ] 2026-10-23 15:47:55,722 [repository-manager-0 | c.o.t.b.AVLRepository] Rebuild triple collections. start entity pool scan...
+[WARN ] 2026-10-23 15:47:55,771 [repository-manager-0 | c.o.t.b.AVLRepository] Entity pool scan completed! Commiting...
+[WARN ] 2026-10-23 15:47:56,012 [repository-manager-0 | c.o.t.b.AVLRepository] Check whether all predicates in the predicate statistics have correct collection sizes.
+[INFO ] 2026-10-23 15:47:56,014 [repository-manager-0 | c.o.t.b.AVLRepository] Checked 0 entries in predicate statistics
+[WARN ] 2026-10-23 15:47:56,014 [repository-manager-0 | c.o.t.b.AVLRepository] Check for missing statement predicates in the predicate statistics
+[INFO ] 2026-10-23 15:47:56,040 [repository-manager-0 | c.o.t.InferencerFactory] ruleSet=rdfsplus-optimized, partialRdfs=false
+[INFO ] 2026-10-23 15:47:56,064 [repository-manager-0 | c.o.l.LicenseRegistry] License configuration: Embedded license
+[INFO ] 2026-10-23 15:47:56,066 [repository-manager-0 | c.o.l.LicenseRegistry] License file: jar:file:/opt/graphdb/dist/lib/graphdb-runtime-10.7.4.jar!/GRAPHDB_LITE.license
+[INFO ] 2026-10-23 15:47:56,070 [repository-manager-0 | c.o.l.LicenseRegistry] Product:                 GRAPHDB_LITE
+[INFO ] 2026-10-23 15:47:56,072 [repository-manager-0 | c.o.l.LicenseRegistry] Capabilities:            [LUCENE_CONNECTOR]
+[INFO ] 2026-10-23 15:47:56,073 [repository-manager-0 | c.o.l.LicenseRegistry] Usage restriction:       null
+[INFO ] 2026-10-23 15:47:56,073 [repository-manager-0 | c.o.l.LicenseRegistry] Licensee:                Freeware
+[INFO ] 2026-10-23 15:47:56,074 [repository-manager-0 | c.o.l.LicenseRegistry] Permitted use:           THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[INFO ] 2026-10-23 15:47:56,075 [repository-manager-0 | c.o.l.LicenseRegistry] Version:                 10.7
+[INFO ] 2026-10-23 15:47:56,076 [repository-manager-0 | c.o.l.LicenseRegistry] Expiry date:             none
+[INFO ] 2026-10-23 15:47:56,077 [repository-manager-0 | c.o.l.LicenseRegistry] Latest publication date: none
+[INFO ] 2026-10-23 15:47:56,077 [repository-manager-0 | c.o.l.LicenseRegistry] Max CPU cores:           1
+[INFO ] 2026-10-23 15:47:56,394 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Searching for plugins available in the classpath...
+[INFO ] 2026-10-23 15:47:56,421 [repository-manager-0 | c.o.GraphDBConfigParameters] Reading external plugins from /opt/graphdb/dist/lib/plugins
+[INFO ] 2026-10-23 15:47:56,422 [repository-manager-0 | c.o.t.OwlimSchemaRepository] Registering external plugins...
+[INFO ] 2026-10-23 15:47:56,764 [repository-manager-0 | c.o.t.p.g.FunctionLoader] Registered 1 functions from package com.ontotext.trree.plugin.geo.
+[INFO ] 2026-10-23 15:47:57,007 [repository-manager-0 | c.o.t.s.i.PluginManager] Initializing plugins: GeoSPARQL, autocomplete, change-tracking, chatgpt-retrieval-connector, dependencies-plugin, direct, elasticsearch-connector, entity-change, expose-entity, geospatial, history, kafka-connector, literals-index, lucene-connector, magic-predicates, mongodb, notifications, notifications-logger, opensearch-connector, plugincontrol, proof, rdfrank, script, sequences, similarity, solr-connector, sparql-mm, sparql-template, text-mining, tx-rollback, utils
+[INFO ] 2026-10-23 15:47:58,204 [repository-manager-0 | c.o.t.g.FunctionLoader] Registered 50 functions from package com.useekm.geosparql.
+[INFO ] 2026-10-23 15:47:58,210 [repository-manager-0 | c.o.t.p.a.AutocompletePluginUtils] >>>>>>>> AutocompletePlugin: No configuration file found at /opt/graphdb/home/data/repositories/fdp/storage/autocomplete/v2/config.properties. Assuming default options for plugin.
+[INFO ] 2026-10-23 15:47:58,289 [repository-manager-0 | c.o.t.p.g.GeoSpatialPlugin] Plugin:geospatial initialized
+[INFO ] 2026-10-23 15:47:58,312 [repository-manager-0 | c.o.t.e.EntityPoolFactory] Using entity pool implementation: transactional-disk
+[INFO ] 2026-10-23 15:47:58,317 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'storage-folder' to value '/opt/graphdb/home/data/repositories/fdp/storage/history/tx-metadata'
+[INFO ] 2026-10-23 15:47:58,324 [repository-manager-0 | c.o.c.AbstractParameter] Configured parameter 'entity-index-size' to value '97.7K'
+[INFO ] 2026-10-23 15:47:58,500 [repository-manager-0 | c.o.p.literals-index] Full-text search functionality is disabled
+[INFO ] 2026-10-23 15:47:58,537 [repository-manager-0 | c.o.p.literals-index] Rebuilding literals indexes. Starting from id: 1
+[INFO ] 2026-10-23 15:47:58,600 [repository-manager-0 | c.o.p.literals-index] Complete in 0.059, num entries indexed:0
+[INFO ] 2026-10-23 15:47:58,628 [repository-manager-0 | c.o.t.p.p.PluginControlPlugin] Plugin:plugincontrol initialized
+[INFO ] 2026-10-23 15:47:59,344 [repository-manager-0 | c.o.g.s.FunctionLoader] Registered 58 functions from package com.github.tkurz.sparqlmm.function.
+[INFO ] 2026-10-23 15:47:59,914 [repository-manager-0 | c.o.t.s.i.PluginManager] Finished initializing plugins
+[INFO ] 2026-10-23 15:47:59,919 [repository-manager-0 | c.o.t.MemoryConfig] Configured global page cache size to 365 MB
+[INFO ] 2026-10-23 15:47:59,922 [repository-manager-0 | c.o.t.MemoryConfig] Max Heap Size: 1 GB
+[INFO ] 2026-10-23 15:47:59,923 [repository-manager-0 | c.o.t.MemoryConfig] Initial Heap Size: 1 GB
+[INFO ] 2026-10-23 15:48:00,279 [repository-manager-0 | c.o.r.p.ParallelLoader] Data will be parsed + resolved + loaded.
+[INFO ] 2026-10-23 15:48:00,293 [repository-manager-0 | c.o.r.p.ParallelLoader] Using 1 threads for inference
+[INFO ] 2026-10-23 15:48:00,822 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 15:48:00,972 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 15:48:01,070 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:01,139 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:01,156 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:01,945 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:02,076 [repositories/fdp | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:48:02,195 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 15:48:02,209 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 15:48:02,217 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:02,228 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:02,233 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:02,599 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:02,615 [repositories/fdp | c.o.g.s.StatementsController] POST data to repository
+[INFO ] 2026-10-23 15:48:02,999 [repositories/fdp | c.o.g.s.StatementsController] POST data to repository
+[INFO ] 2026-10-23 15:48:03,477 [repositories/fdp | c.o.g.s.StatementsController] POST data to repository
+[INFO ] 2026-10-23 15:48:03,895 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 15:48:03,908 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 15:48:03,916 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:03,931 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:03,938 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:48:04,424 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:48:49,639 [http-nio-7200-exec-3 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:54:27,752 [http-nio-7200-exec-5 | o.e.r.h.s.r.TupleQueryResultView] Request for query 3392903 is finished
+[INFO ] 2026-10-23 15:55:01,349 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 15:55:01,580 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 15:56:48,084 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 15:56:48,094 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 15:56:48,103 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:56:48,132 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:56:48,136 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:56:48,478 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:56:48,483 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 15:56:48,490 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 15:56:48,496 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:56:48,512 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:56:48,517 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 15:56:48,827 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 15:56:49,064 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 15:56:49,071 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:00:15,054 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:00:15,065 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:00:15,072 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,103 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:15,107 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,400 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:15,436 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:00:15,445 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:00:15,449 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,454 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:15,457 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,704 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:15,708 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:00:15,715 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:00:15,718 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,727 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:15,731 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:00:15,984 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:00:16,022 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:00:16,025 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:00:16,280 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:00:16,285 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:00:16,291 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:00:16,301 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:00:16,471 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:00:16,477 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:03:05,907 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:03:05,917 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:03:05,924 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:05,939 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:05,944 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,264 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,307 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:03:06,317 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:03:06,322 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,331 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,336 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,615 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,618 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:03:06,625 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:03:06,630 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,637 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,640 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,898 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,951 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:03:06,959 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:03:06,964 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:06,970 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:06,973 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:07,277 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:07,281 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:03:07,288 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:03:07,293 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:07,301 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:07,304 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:03:07,580 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:03:08,078 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:03:08,083 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:04:58,767 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:04:58,776 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:04:58,782 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:58,797 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:58,800 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,094 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,141 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:04:59,150 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:04:59,155 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,161 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,165 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,452 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,456 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:04:59,467 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:04:59,471 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,488 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,491 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,763 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,823 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:04:59,832 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:04:59,837 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:04:59,846 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:04:59,850 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,191 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,196 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:05:00,205 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:05:00,210 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,218 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,222 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,515 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,570 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:05:00,581 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:05:00,588 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,596 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,599 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,938 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,944 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:05:00,951 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:05:00,958 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:00,966 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:05:00,970 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:05:01,255 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:06:06,912 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:06:06,921 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:06:06,939 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:06:06,944 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:06:14,902 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:06:14,906 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:06:14,983 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:06:14,989 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:06:25,966 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:06:25,971 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:07:03,482 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:07:03,490 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:07:30,415 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:07:30,422 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:07:33,749 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:07:33,753 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:07:40,585 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:07:40,592 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:07:41,250 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:07:41,256 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:08:52,223 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:08:52,227 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:08:57,598 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:08:57,603 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:09:01,456 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:09:01,460 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:09:57,165 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:57,173 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:57,177 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:57,257 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:57,260 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:57,581 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:57,612 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:57,620 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:57,624 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:57,633 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:57,637 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:57,893 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:57,896 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:57,902 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:57,906 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:57,914 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:57,916 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,173 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,233 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:58,242 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:58,247 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,256 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,259 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,578 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,581 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:58,590 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:58,593 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,601 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,605 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,892 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,934 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:58,941 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:58,944 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:58,951 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:58,955 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:59,265 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:59,271 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:09:59,279 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:09:59,283 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:59,295 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:09:59,299 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:09:59,618 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:10:15,450 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:10:15,458 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:10:17,156 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:10:17,165 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:10:17,166 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:10:17,179 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:10:17,212 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:10:17,216 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:10:17,294 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:10:17,300 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:10:20,638 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:10:20,643 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:11:10,519 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:10,529 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:10,533 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:10,546 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:10,549 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:10,838 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:10,869 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:10,876 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:10,879 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:10,884 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:10,887 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,137 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,141 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:11,149 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:11,153 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,160 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,163 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,427 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,471 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:11,480 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:11,483 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,489 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,492 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,789 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,793 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:11,801 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:11,805 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:11,813 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:11,817 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:12,113 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:12,155 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:12,162 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:12,165 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:12,170 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:12,172 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:12,439 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:12,445 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] POST transaction start
+[INFO ] 2026-10-23 16:11:12,454 [repositories/fdp | o.e.r.h.s.r.t.TransactionStartController] transaction started
+[INFO ] 2026-10-23 16:11:12,461 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:12,469 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:11:12,473 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation
+[INFO ] 2026-10-23 16:11:12,818 [repositories/fdp | o.e.r.h.s.r.t.TransactionController] PUT txn operation request finished.
+[INFO ] 2026-10-23 16:26:37,961 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:26:37,972 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:26:37,991 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:26:37,996 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:26:47,759 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 1618200469
+[INFO ] 2026-10-23 16:26:47,764 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 1618200469 is finished
+[INFO ] 2026-10-23 16:26:47,820 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:26:47,824 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:26:53,819 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:26:53,823 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:28:07,135 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:28:07,140 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:28:34,207 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:28:34,222 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:29:21,247 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:29:21,252 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:29:58,589 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:29:58,596 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:31:26,025 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:31:26,031 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:31:26,217 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:31:26,223 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:31:26,698 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:31:26,704 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:32:58,973 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:32:58,981 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:33:17,147 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:33:17,154 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:33:59,034 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:33:59,040 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:34:02,027 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:34:02,033 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:34:03,691 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:34:03,697 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:34:45,688 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:34:45,693 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:35:41,041 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:35:41,045 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:35:44,151 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:35:44,161 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
+[INFO ] 2026-10-23 16:36:00,967 [repositories/fdp | c.o.g.s.h.GraphDBQueryResultHandler] POST query 2019807964
+[INFO ] 2026-10-23 16:36:00,975 [repositories/fdp | c.o.g.s.TupleQueryResultView] Request for query 2019807964 is finished
